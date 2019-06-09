@@ -9,7 +9,6 @@ class EmployeeList extends Component{
     constructor(props) {
         super(props);
         this.state = { employees: [], isLoading: true };
-        //this.remove = this.remove.bind(this);
     }
 
     componentDidMount() {
@@ -31,7 +30,7 @@ class EmployeeList extends Component{
             }
         }).then(response => response.json())
             .then(data => {
-            alert("delete employee");
+            alert("Employee removed");
             this.setState({employees: data, isLoading: false})
         });
         
