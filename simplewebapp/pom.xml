@@ -21,6 +21,7 @@
         <postgresql.version>9.1-901-1.jdbc4</postgresql.version>
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
         <spring-test.version>5.0.8.RELEASE</spring-test.version>
+        <junit.versuon>4.12</junit.versuon>
     </properties>
 
     <dependencies>
@@ -62,7 +63,7 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
+            <version>${springfox-swagger2.version}</version>
         </dependency>
 
         <dependency>
@@ -74,7 +75,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
